@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="Spring.part1.entity.Weapon" id="Axe">
+        <property name="type" value="Axe"/>
+        <property name="damage" value="25"/>
+        <property name="weight" value="10"/>
+    </bean>
+
+    <bean class="Spring.part1.entity.Weapon" id="DonateLegendaryOfficeKnife">
+        <property name="type" value="DonateLegendaryOfficeKnife"/>
+        <property name="damage" value="9999"/>
+        <property name="weight" value="1"/>
+    </bean>
+
+    <bean class="Spring.part1.entity.Humen" id="Ivan">
+        <constructor-arg name="name" value="Ivan"/>
+        <constructor-arg name="age" value="18"/>
+        <constructor-arg name="hp" value="250"/>
+        <property name="weapon" value="Axe"/>
+    </bean>
+
+    <bean class="Spring.part1.entity.Humen" id="Nagibator228">
+        <constructor-arg name="name" value="Nagibator228"/>
+        <constructor-arg name="age" value="12"/>
+        <constructor-arg name="hp" value="10"/>
+        <property name="weapon" value="DonateLegendaryOfficeKnife"/>
+    </bean>
+
+
+
+</beans>
